@@ -497,7 +497,7 @@ module ActivityHistory =
 ```
 
 This version reimplements the constructor and a getter for each field.
-I could have made the field names for `ActivityHistory` be the same in both cases too, but. in the struct case, type inference would not work.
+I could have made the field names for `ActivityHistory` be the same in both cases too, but in the struct case, type inference would not work.
 By making them different, the user is forced to use the getter functions rather than dotting in.
 
 Both implementations have the same "API", so we can create code that works with both:
